@@ -1,0 +1,3 @@
+= turbo_frame_tag current_channel do
+  = form_for [current_channel, Message.new], class: 'flex rounded-lg border-2 border-grey overflow-hidden' do |f|
+    = f.text_field :content, placeholder: "Message ##{current_channel.try(:name)}", class: "w-full px-4", autofocus: true

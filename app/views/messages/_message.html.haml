@@ -1,0 +1,8 @@
+.flex.items-start.mb-4.text-sm
+  -#%img.w-10.h-10.rounded.mr-3{src: "https://twitter.com/steveschoger/profile_image"}/
+  .flex-1.overflow-hidden
+    %div
+      %span.font-bold= message.author
+      %span.text-grey.text-xs= message.created_at
+    %p.text-black.leading-normal
+      = message.content
